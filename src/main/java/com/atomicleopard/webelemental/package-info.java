@@ -1,9 +1,6 @@
 /**
  * WebElemental is a small library to make writing Selenium tests easier.
  * <p>
- * The existing WebElement interface is a bit clunky and hard to use.
- * </p>
- * <p>
  * WebElemental introduces the {@link com.atomicleopard.webelemental.Element} class, which works with an API modeled on jQuery.<br/>
  * This means that web tests can be written in a way that is familiar to those used to CSS selectors and jQuery.
  * </p>
