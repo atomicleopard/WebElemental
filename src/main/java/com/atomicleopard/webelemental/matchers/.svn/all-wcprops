@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/141713/OSCA/account/trunk/account-webtest/src/main/java/au/com/ndm/accounts/webtests/framework/matchers
+END
+HasAttributeMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/140252/OSCA/account/trunk/account-webtest/src/main/java/au/com/ndm/accounts/webtests/framework/matchers/HasAttributeMatcher.java
+END
+HasTextMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/140252/OSCA/account/trunk/account-webtest/src/main/java/au/com/ndm/accounts/webtests/framework/matchers/HasTextMatcher.java
+END
+HasClassMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/141713/OSCA/account/trunk/account-webtest/src/main/java/au/com/ndm/accounts/webtests/framework/matchers/HasClassMatcher.java
+END
+HasSizeMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/140252/OSCA/account/trunk/account-webtest/src/main/java/au/com/ndm/accounts/webtests/framework/matchers/HasSizeMatcher.java
+END
+HasIdMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/140252/OSCA/account/trunk/account-webtest/src/main/java/au/com/ndm/accounts/webtests/framework/matchers/HasIdMatcher.java
+END
+HasValueMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/!svn/ver/140252/OSCA/account/trunk/account-webtest/src/main/java/au/com/ndm/accounts/webtests/framework/matchers/HasValueMatcher.java
+END
+IsVisibleMatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/140341/OSCA/account/trunk/account-webtest/src/main/java/au/com/ndm/accounts/webtests/framework/matchers/IsVisibleMatcher.java
+END

@@ -1,0 +1,28 @@
+package au.com.ndm.accounts.webtests.framework.matchers;
+
+import org.hamcrest.BaseMatcher;
+import org.hamcrest.Description;
+import org.hamcrest.Matcher;
+
+import au.com.ndm.accounts.webtests.framework.Element;
+
+public class HasAttributeMatcher extends BaseMatcher<Element> {
+
+	private final Matcher<String> matcher;
+	private String attribute;
+
+	public HasAttributeMatcher(String attribute, Matcher<String> matcher) {
+		this.attribute = attribute;
+		this.matcher = matcher;
+	}
+
+	public boolean matches(Object o) {
+		return matcher.matches(((Element) o).attr(attribute));
+	}
+
+	public void describeTo(Description description) {
+		description.appendText("has attribute " + attribute + " ");
+		matcher.describeTo(description);
+	}
+
+}

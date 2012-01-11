@@ -1,0 +1,17 @@
+package au.com.ndm.accounts.webtests.framework.matchers;
+
+import org.hamcrest.BaseMatcher;
+import org.hamcrest.Description;
+
+import au.com.ndm.accounts.webtests.framework.Element;
+
+public class IsVisibleMatcher extends BaseMatcher<Element> {
+
+	public boolean matches(Object o) {
+		return ((Element) o).isVisible();
+	}
+
+	public void describeTo(Description description) {
+		description.appendText("element to be visible");
+	}
+}
