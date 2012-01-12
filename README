@@ -14,5 +14,6 @@ There are several key motivations for the creation of this library:
  	<groupId>com.atomicleopard</groupId>
 	<artifactId>webelemental</artifactId>
 	<name>webelemental</name>
+	<version>0.0.1</version>
 	<scope>test</scope>
 </dependency>
