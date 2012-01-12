@@ -6,5 +6,13 @@ This means that web tests can be written in a way that is familiar to those used
 There are several key motivations for the creation of this library:
 
  * It is often just as necessary to verify the absence of elements as the presence of them - this is something that is challenging with the WebDriver interface
- * When using the http://code.google.com/p/selenium/wiki/PageObjects being bound to specific data can often make tests quite fragile. This has led to constructs such as Element.any() and Element.first()
+ * When using the page objects pattern (http://code.google.com/p/selenium/wiki/PageObjects) being bound to specific data can often make tests quite fragile. This has led to constructs such as Element.any() and Element.first()
  * Selection of elements is most naturally performed using CSS selectors by Web Developers - Selenium places equal weight on Xpath selection, which experience has shown tends to be more fragile.
+ 
+ Try it out, update your pom with:
+ <dependency>
+ 	<groupId>com.atomicleopard</groupId>
+	<artifactId>webelemental</artifactId>
+	<name>webelemental</name>
+	<scope>test</scope>
+</dependency>
