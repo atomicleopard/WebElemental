@@ -10,19 +10,11 @@
 		clunky and hard to use. WebElemental introduces the Element class, which works with an API modeled on jQuery.
 		This means that web tests can be written in a way that is familiar to those used to CSS selectors and jQuery.
  	</description>
-	<url>http://www.atomicleopard.com</url>
+	<url>https://github.com/atomicleopard/WebElemental</url>
 	<organization>
 		<name>Atomic Leopard</name>
 		<url>http://www.atomicleopard.com</url>
 	</organization>
-	<developers>
-		<developer>
-			<id>nick</id>
-			<name>Nicholas Okunew</name>
-			<email>nick@atomicleopard.com</email>
-		</developer>
-	</developers>
-
 	<licenses>
 		<license>
 			<name>GNU Lesser General Public License (LGPL), Version 3.0</name>
@@ -35,6 +27,17 @@
 		<developerConnection>scm:git:git@github.com:atomicleopard/WebElemental.git</developerConnection>
 		<url>http://github.com/atomicleopard/WebElemental</url>
 	</scm>
+	<issueManagement>
+		<url>https://github.com/atomicleopard/WebElemental/issues</url>
+		<system>GitHub Issues</system>
+	</issueManagement>
+	<developers>
+		<developer>
+			<id>nick</id>
+			<name>Nicholas Okunew</name>
+			<email>nick@atomicleopard.com</email>
+		</developer>
+	</developers>
 
 	<!-- We use Sonatype to sync to the central repository, they require us to set their pom as our parent pom. -->
 	<parent>
@@ -42,7 +45,6 @@
 		<artifactId>oss-parent</artifactId>
 		<version>7</version>
 	</parent>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
