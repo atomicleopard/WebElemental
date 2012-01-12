@@ -4,7 +4,7 @@
 	<artifactId>webelemental</artifactId>
 	<name>webelemental</name>
 	<packaging>jar</packaging>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<description>
 		WebElemental is a small library to make writing Selenium tests easier. The existing WebElement interface is a bit
 		clunky and hard to use. WebElemental introduces the Element class, which works with an API modeled on jQuery.
