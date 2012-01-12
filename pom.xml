@@ -32,10 +32,10 @@
 	</licenses>
 	<scm>
 		<connection>scm:git:git://github.com/atomicleopard/WebElemental.git</connection>
-		<developerConnection>scm:git:git://github.com/atomicleopard/WebElemental.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:atomicleopard/WebElemental.git</developerConnection>
 		<url>http://github.com/atomicleopard/WebElemental</url>
 	</scm>
-	
+
 	<!-- We use Sonatype to sync to the central repository, they require us to set their pom as our parent pom. -->
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
