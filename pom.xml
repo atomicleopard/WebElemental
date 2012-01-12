@@ -30,7 +30,12 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-
+	<scm>
+		<connection>scm:git:git@github.com:atomicleopard/WebElement.git</connection>
+		<developerConnection>scm:git:git@github.com:atomicleopard/WebElement.git</developerConnection>
+		<url>git@github.com:atomicleopard/WebElement.git</url>
+	</scm>
+	
 	<!-- We use Sonatype to sync to the central repository, they require us to set their pom as our parent pom. -->
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
@@ -63,13 +68,13 @@
 			<groupId>org.hamcrest</groupId>
 			<artifactId>hamcrest-all</artifactId>
 			<version>1.1</version>
-			<scope>test</scope>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.8.2</version>
-			<scope>test</scope>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.mockito</groupId>

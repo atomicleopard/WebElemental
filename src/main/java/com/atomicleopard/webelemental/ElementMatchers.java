@@ -33,6 +33,16 @@ import com.atomicleopard.webelemental.matchers.HasTextMatcher;
 import com.atomicleopard.webelemental.matchers.HasValueMatcher;
 import com.atomicleopard.webelemental.matchers.IsVisibleMatcher;
 
+/**
+ * <p>
+ * {@link ElementMatchers} provides static factory methods for producing
+ * hamcrest {@link Matcher}s for different {@link Element} properties.
+ * </p>
+ * <p>
+ * As an alternative, consider using an {@link ElementMatcher} obtained from
+ * {@link Element#verify()} for a fluent, declarative API.
+ * </p>
+ */
 public final class ElementMatchers {
 	ElementMatchers() {
 	}

@@ -33,26 +33,32 @@
  * </p>
  * <p>
  * {@link com.atomicleopard.webelemental.Element} wraps a group of {@link org.openqa.selenium.WebElement}s, that is, it isn't necessarily
- * a single element on the web page, but is all the elements that matche the selection criteria.
- * What this means is that when you interact with an element, you interact generally with the first matching element.
+ * a single element on the web page, but is all the elements that matched the selection criteria.
+ * What this means is that when you interact with an element, you interact generally with all selected elements.
  * This allows us to do things like this:
  * <pre><code>
- * find(".entry").get(1).click();
- * find("input").any().text("Updated");
+ * find(".entry").click(); // click everything
+ * find(".entry").get(1).click(); // click the second item
+ * find("input").any().text("Updated"); // update the text of one of the inputs, it doesnt matter which
  * </code></pre>
  * </p>
  * <p>
- * When we get down to it, Selenium tests have limited value without assertions. It has been beneficial in in projects i've worked
- * with Selenium on to look at them as web tests, rather than unit tests. 
- * JUnit tests, particularly with Hamcrest matchers have a conceptual overhead, which can limit the audience. 
+ * When we get down to it, Selenium tests have limited value without assertions. 
+ * Experience has shown that the audience for web tests is usually wider and less specifically skilled in java than it would be
+ * for unit tests. 
+ * JUnit tests, particularly with Hamcrest matchers, have a conceptual overhead which can limit the audience. 
  * To help remedy this, to support the Element class this library supplies the {@link com.atomicleopard.webelemental.ElementMatcher} class.
  * You can obtain an ElementMatcher for an Element by calling the {@link com.atomicleopard.webelemental.Element#verify()} method. 
  * <pre><code>
  * find(".entry").verify().isVisible(); //assert that at least one WebElement matched by the '.entry' selector is visible
  * find("input.username").verify().isPresent().hasId("j_username").hasValue("Anthony@mailinator.com");
  * </code></pre>
- * {@link com.atomicleopard.webelemental.ElementMatcher} methods provide a fluid syntax (or are <i>chainable</i>) so that many related assertions
+ * {@link com.atomicleopard.webelemental.ElementMatcher} methods provide a fluent syntax (or <i>chainable interface</i>) so that many related assertions
  * can be made inline easily.
+ * </p>
+ * <p>
+ * For those of you comfortable using regular JUnit assertions, {@link com.atomicleopard.webelemental.ElementMatchers} provides static factory methods for
+ * creating Hamcrest matchers specific to the {@link com.atomicleopard.webelemental.Element} class.
  * </p>
  */
 package com.atomicleopard.webelemental;
